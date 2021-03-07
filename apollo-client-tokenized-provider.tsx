@@ -16,7 +16,6 @@ export const ApolloClientTokenizedProvider = memo<IApolloClientTokenizedProvider
   ApolloClientRegeneratorProps = null,
 }: IApolloClientTokenizedProvider<any>) {
   const token = useToken();
-  console.log({ token })
   const memoOptions = useMemo(() => ({ ...ApolloClientRegeneratorProps?.options, ...options, token }), [options, ApolloClientRegeneratorProps, token]);
   return <ApolloClientRegenerator {...ApolloClientRegeneratorProps} options={memoOptions}>{children}</ApolloClientRegenerator>
 });
