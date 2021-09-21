@@ -1,5 +1,5 @@
-import React, { memo, useState, useMemo, useEffect, useRef } from 'react';
-import { ApolloClient, ApolloProvider } from '@apollo/react-hooks';
+import React, { memo, useState, useMemo, useEffect, useRef, useContext, useCallback } from 'react';
+import { ApolloClient, ApolloProvider } from '@apollo/client';
 import { generateApolloClient, IApolloClientGeneratorOptions } from '@deepcase/hasura/client';
 
 export interface IApolloClientRegenerator {
@@ -13,6 +13,16 @@ export const defaultRegenerateApolloClient = (options: IApolloClientGeneratorOpt
   if (!generateApolloClient) throw new Error("!generateApolloClient");
   return generateApolloClient(options);
 };
+
+interface IApolloClientGeneratorContext {
+  regenerate: () => any;
+}
+
+export const ApolloClientRegeneratorContext = React.createContext<IApolloClientGeneratorContext>({ regenerate: () => {} });
+
+export function useApolloClientRegenerator() {
+  return useContext(ApolloClientRegeneratorContext);
+}
 
 /**
  * Recreate ApolloClient on mount, and on each token or options changes. Make sure you memo it and dont update options object without need.
@@ -30,6 +40,13 @@ export const ApolloClientRegenerator = memo<IApolloClientRegenerator>(function A
     if (!mountedRef.current) mountedRef.current = true;
     else setApolloClient(regenerateApolloClient(options));
   }, [options]);
+  const context = useMemo(() => ({
+    regenerate: () => {
+      setApolloClient(regenerateApolloClient(options));
+    },
+  }), [options]);
 
-  return <ApolloProvider client={apolloClient}>{children}</ApolloProvider>
+  return <ApolloClientRegeneratorContext.Provider value={context}>
+    <ApolloProvider client={apolloClient}>{children}</ApolloProvider>
+  </ApolloClientRegeneratorContext.Provider>;
 });
