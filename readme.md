@@ -6,8 +6,8 @@
 
 import providers and hooks
 ```tsx
-import { TokenProvider, useTokenController } from '@deepcase/deeplinks/imports/react-token';
-import { ApolloClientTokenizedProvider } from '@deepcase/react-hasura/apollo-client-tokenized-provider';
+import { TokenProvider, useTokenController } from '@deep-foundation/deeplinks/imports/react-token';
+import { ApolloClientTokenizedProvider } from '@deep-foundation/react-hasura/apollo-client-tokenized-provider';
 ```
 
 control token

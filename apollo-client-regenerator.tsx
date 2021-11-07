@@ -1,6 +1,6 @@
 import React, { memo, useState, useMemo, useEffect, useRef, useContext, useCallback } from 'react';
 import { ApolloClient, ApolloProvider } from '@apollo/client';
-import { generateApolloClient, IApolloClientGeneratorOptions } from '@deepcase/hasura/client';
+import { generateApolloClient, IApolloClientGeneratorOptions } from '@deep-foundation/hasura/client';
 
 export interface IApolloClientRegenerator {
   options: IApolloClientGeneratorOptions;

@@ -1,12 +1,12 @@
 {
-  "name": "@deepcase/react-hasura",
-  "version": "0.0.5",
-  "license": "ISC",
+  "name": "@deep-foundation/react-hasura",
+  "version": "0.0.2",
+  "license": "MIT",
   "author": "Ivan S Glazunov <ivansglazunov@gmail.com>",
-  "homepage": "https://github.com/deepcase/react-hasura",
+  "homepage": "https://github.com/deep-foundation/react-hasura",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/deepcase/react-hasura.git"
+    "url": "ssh://git@github.com/deep-foundation/react-hasura.git"
   },
   "description": "",
   "dependencies": {
@@ -20,7 +20,7 @@
     "typescript": "^3.9.10"
   },
   "peerDependencies": {
-    "@deepcase/hasura": "*",
+    "@deep-foundation/hasura": "*",
     "react": "*"
   },
   "scripts": {
