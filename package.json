@@ -11,12 +11,12 @@
   "description": "",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
-    "@deep-foundation/hasura": "0.0.21",
-    "debug": "^4.3.1"
+    "@deep-foundation/hasura": "0.0.22",
+    "debug": "^4.3.4"
   },
   "devDependencies": {
-    "@types/node": "^14.0.23",
-    "@types/react": "^17.0.2",
+    "@types/node": "^14.18.36",
+    "@types/react": "^17.0.52",
     "pre-commit": "^1.2.2",
     "typescript": "^3.9.10"
   },
