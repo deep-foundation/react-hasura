@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
+    "@deep-foundation/hasura": "0.0.21",
     "debug": "^4.3.1"
   },
   "devDependencies": {
