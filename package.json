@@ -1,4 +1,4 @@
-{ 
+{
   "name": "@deep-foundation/react-hasura",
   "version": "0.0.6",
   "license": "MIT",
@@ -11,7 +11,7 @@
   "description": "",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
-    "@deep-foundation/hasura": "0.0.22",
+    "@deep-foundation/hasura": "0.0.23",
     "debug": "^4.3.4"
   },
   "devDependencies": {
