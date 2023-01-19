@@ -10,6 +10,7 @@
   },
   "description": "",
   "dependencies": {
+    "@apollo/client": "^3.7.4",
     "@deep-foundation/hasura": "0.0.29",
     "debug": "^4.3.1"
   },
