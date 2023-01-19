@@ -10,9 +10,8 @@
   },
   "description": "",
   "dependencies": {
-    "@apollo/react-hooks": "^4.0.0",
-    "debug": "^4.3.1",
-    "@deep-foundation/hasura": "0.0.29"
+    "@deep-foundation/hasura": "0.0.29",
+    "debug": "^4.3.1"
   },
   "devDependencies": {
     "@types/node": "^14.0.23",
