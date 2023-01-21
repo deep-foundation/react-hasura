@@ -1,6 +1,6 @@
 {
   "name": "@deep-foundation/react-hasura",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "license": "MIT",
   "author": "Ivan S Glazunov <ivansglazunov@gmail.com>",
   "homepage": "https://github.com/deep-foundation/react-hasura",
@@ -11,7 +11,7 @@
   "description": "",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
-    "@deep-foundation/hasura": "0.0.33",
+    "@deep-foundation/hasura": "0.0.34",
     "debug": "^4.3.1"
   },
   "devDependencies": {
