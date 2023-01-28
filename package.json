@@ -1,7 +1,7 @@
 {
   "name": "@deep-foundation/react-hasura",
   "version": "0.0.12",
-  "license": "MIT",
+  "license": "Unlicense",
   "author": "Ivan S Glazunov <ivansglazunov@gmail.com>",
   "homepage": "https://github.com/deep-foundation/react-hasura",
   "repository": {
