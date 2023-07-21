@@ -1,6 +1,12 @@
 # deep-foundation react-hasura
 
-[![npm version](https://badge.fury.io/js/%40deep-foundation%2Freact-hasura.svg)](https://badge.fury.io/js/%40deep-foundation%2Freact-hasura) [![example](https://badgen.net/badge/example/gh-pages/gray)](https://deep-foundation.github.io/hasura/) [![develop deep-foundation](https://badgen.net/badge/develop/deep-foundation)](https://github.com/deep-foundation/deep-foundation)
+[![npm](https://img.shields.io/npm/v/@deep-foundation/react-hasura.svg)](https://www.npmjs.com/package/@deep-foundation/react-hasura)
+[![Gitpod](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/deep-foundation/react-hasura) 
+[![Discord](https://badgen.net/badge/icon/discord?icon=discord&label&color=purple)](https://discord.gg/deep-foundation)
+
+# Usage
+## Library
+See [Documentation] for examples and API
 
 ## usage
 
@@ -28,3 +34,5 @@ return <TokenProvider>
   </ApolloClientTokenizedProvider>
 </TokenProvider>;
 ```
+
+[Documentation]: https://deep-foundation.github.io/react-hasura/
