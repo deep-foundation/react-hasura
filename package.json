@@ -12,7 +12,7 @@
   "dependencies": {
     "@apollo/client": "^3.7.9",
     "@apollo/react-hooks": "^4.0.0",
-    "@deep-foundation/hasura": "^0.0.46",
+    "@deep-foundation/hasura": "^0.0.50",
     "debug": "^4.3.1"
   },
   "devDependencies": {
