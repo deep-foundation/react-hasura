@@ -1,6 +1,8 @@
 import React, { memo, useState, useMemo, useEffect, useRef, useContext, useCallback } from 'react';
 import { ApolloClient, ApolloProvider } from '@apollo/client';
 import { generateApolloClient, IApolloClientGeneratorOptions } from '@deep-foundation/hasura/client';
+import {debug} from './debug.js'
+const moduleLog = debug.extend('apollo-client-regenerator')
 
 export interface IApolloClientRegenerator {
   options: IApolloClientGeneratorOptions;
@@ -33,8 +35,11 @@ export const ApolloClientRegenerator = memo<IApolloClientRegenerator>(function A
   useStateApolloClient = useState,
   regenerateApolloClient = defaultRegenerateApolloClient,
 }: IApolloClientRegenerator) {
+  const log = moduleLog.extend(ApolloClientRegenerator.name)
   const initialApolloClient = useMemo(() => regenerateApolloClient(options), []);
+  log({initialApolloClient})
   const [apolloClient, setApolloClient] = useStateApolloClient(initialApolloClient);
+  log({apolloClient, setApolloClient})
   const mountedRef = useRef<boolean>(false);
   useEffect(() => {
     if (!mountedRef.current) mountedRef.current = true;
