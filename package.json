@@ -21,7 +21,7 @@
   },
   "peerDependencies": {
     "react": "*",
-    "@deep-foundation/hasura": "^0.0.52",
+    "@deep-foundation/hasura": "^0.0.53",
     "@apollo/react-hooks": "^4.0.0",
     "@apollo/client": "^3.7.9"
   },
