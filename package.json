@@ -10,9 +10,6 @@
   },
   "description": "",
   "dependencies": {
-    "@apollo/client": "^3.7.9",
-    "@apollo/react-hooks": "^4.0.0",
-    "@deep-foundation/hasura": "^0.0.51",
     "debug": "^4.3.1"
   },
   "devDependencies": {
@@ -23,7 +20,10 @@
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
-    "react": "*"
+    "react": "*",
+    "@deep-foundation/hasura": "^0.0.51",
+    "@apollo/react-hooks": "^4.0.0",
+    "@apollo/client": "^3.7.9"
   },
   "scripts": {
     "package:build": "tsc --project tsconfig.json",
