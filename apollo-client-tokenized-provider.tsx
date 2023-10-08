@@ -12,7 +12,8 @@ export interface IApolloClientTokenizedProvider<T> {
 
 export const ApolloClientTokenizedProvider = memo<IApolloClientTokenizedProvider<any>>(function ApolloClientTokenizedProvider({
   children = null,
-  options = null,
+  options = undefined,
+  // @ts-ignore
   ApolloClientRegenerator = _ApolloClientRegenerator,
   ApolloClientRegeneratorProps = null,
 }: IApolloClientTokenizedProvider<any>) {
