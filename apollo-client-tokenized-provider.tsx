@@ -1,7 +1,7 @@
 import React, { memo, useMemo, FC } from 'react';
-import { ApolloClientRegenerator as _ApolloClientRegenerator } from './apollo-client-regenerator.js';
-import { useToken } from './token-context.js';
-import { IApolloClientGeneratorOptions } from '@deep-foundation/hasura/client.js';
+import { ApolloClientRegenerator as _ApolloClientRegenerator } from './apollo-client-regenerator';
+import { useToken } from './token-context';
+import { IApolloClientGeneratorOptions } from '@deep-foundation/hasura/client';
 
 export interface IApolloClientTokenizedProvider<T> {
   children?: any;
@@ -12,8 +12,7 @@ export interface IApolloClientTokenizedProvider<T> {
 
 export const ApolloClientTokenizedProvider = memo<IApolloClientTokenizedProvider<any>>(function ApolloClientTokenizedProvider({
   children = null,
-  options = undefined,
-  // @ts-ignore
+  options = null,
   ApolloClientRegenerator = _ApolloClientRegenerator,
   ApolloClientRegeneratorProps = null,
 }: IApolloClientTokenizedProvider<any>) {

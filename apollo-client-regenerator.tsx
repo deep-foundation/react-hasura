@@ -1,6 +1,6 @@
 import React, { memo, useState, useMemo, useEffect, useRef, useContext, useCallback } from 'react';
 import { ApolloClient, ApolloProvider } from '@apollo/client';
-import { generateApolloClient, IApolloClientGeneratorOptions } from '@deep-foundation/hasura/client.js';
+import { generateApolloClient, IApolloClientGeneratorOptions } from '@deep-foundation/hasura/client';
 import {debug} from './debug.js'
 const moduleLog = debug.extend('apollo-client-regenerator')
 
