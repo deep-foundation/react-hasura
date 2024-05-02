@@ -26,9 +26,10 @@
     "@apollo/client": "^3.7.9"
   },
   "scripts": {
+    "package:refresh": "rm -rf node_modules; rm -f package-lock.json; npm i",
     "package:build": "tsc --project tsconfig.json",
     "package:unbuild": "rm -f ./*.js; rm -f ./*.js.map; rm -f ./*.d.ts",
     "package:publish": "npm run package:build; npm publish --access public; npm run package:unbuild",
-    "package:release": "npm version patch && git push && git push --tags"
+    "package:release": "npm version patch && git push"
   }
 }
