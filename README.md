@@ -34,3 +34,15 @@ return <TokenProvider>
 ```
 
 [Documentation]: https://deep-foundation.github.io/react-hasura/
+
+## Maintenance
+
+### Publish new version
+
+```
+npm version patch && git push
+```
+
+After that it might be required to release new versions of:
+1. https://github.com/deep-foundation/deeplinks
+
